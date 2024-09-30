@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREYGLAM</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+</head>
+
+<body class="bg-order">
+    <header>
+        <h1>GREYGLAM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">LANDING</a></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+            
+            </ul>
+
+        </nav>
+    </header>
+    <h2 align="center">Intrested in buying!</h2>
+    <main>
+
+        <form action="submit-form.php" method="POST">
+            <div id="personal">
+                <div>
+
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+
+            </div>
+            <section>
+                <div id="typeofproduct">
+                    <h3>Condition of the clothing</h3>
+                    <div class="radio-group">
+                        <div>
+
+                            <input type="radio" id="faded" name="product" value="faded">
+                            <label for="faded">Faded gem</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Good" name="product" value="Good">
+                            <label for="Good">Good</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" id="very good" name="product" value="Very Good">
+                            <label for="very good">Very Good</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" id="excellent" name="product" value="Excellent">
+                            <label for="excellent">Excellent</label>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="form-container">
+                <div class="select-container">
+                    <h3>Which brand is the shoe</h3>
+                    <select name="product" id="product-select">
+                        <option value="">Select a product</option>
+                        <option value="DIOR SHOES">DIOR SHOES</option>
+                        <option value="ALEXANDER MCQUEEN">ALEXANDER MCQUEEN</option>
+                        <option value="AMIRI KICKS">AMIRI KICKS</option>
+                        <option value="AIR MAX270">AIR MAX270</option>
+                        <option value="BAPE STA">BAPE STA</option>
+                        <option value="CONVERSE RUNSTA">CONVERSE RUNSTA</option>
+                        <option value="CONVERSE">CONVERSE</option>
+                        <option value="JORDAN 4">JORDAN 4</option>
+                        <option value="ADIDAS SAMBA">ADIDAS SAMBA</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="upload-container">
+                    <h3>Please provide a clear picture of the shoe</h3>
+                    <label for="fileUpload" class="upload-button">
+                        Upload a picture of the clothing
+                        <input type="file" id="fileUpload" style="display: none;" />
+                    </label>
+                </div>
+            </div>
+            <div>
+                <div id="price">
+                    <label for="price">Price:</label>
+                    <input min="0" type="number">
+                </div>
+                <div id="date">
+                    <label for="date">Approximate Date of Purchase:</label>
+                    <input type="date">
+                </div>
+
+            </div>
+
+
+            <div>
+                <label for="message">Any additional information </label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+
+
+            <input type="submit" value="Send Inquiry">
+        </form>
+
+    </main>
+
+</body>
+
+</html>
